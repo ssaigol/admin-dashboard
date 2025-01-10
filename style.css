@@ -1,4 +1,3 @@
-
 .main-container {
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -12,8 +11,8 @@
 .sidebar {
     background-color: rgb(36, 147, 210);
     color: #ffffff;
-    padding-right: 100px;
-    padding-left: 35px;
+    padding-right: 70px;
+    padding-left: 25px;
     font-family: Roboto;
     font-weight: 700;
 
@@ -55,9 +54,9 @@
             display: grid;
         }
 
-
-
-
+        .branding-nav {
+            margin-top: -150px;
+        }
 
 
 .header {
@@ -67,9 +66,29 @@
 
     grid-area: header;
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1.75fr 1fr;
+    grid-template-rows: 1fr 2fr;
 }
+
+        .header > * {
+            border: 2px black solid;
+        }
+
+        .search {
+            display: flex;
+            padding: 0px 10px;
+            gap: 5px;
+        }
+
+        .searchbar {
+            flex-grow: 1;
+            margin: 20px 5px;
+            border-radius: 10px;
+            border: none;
+            background-color: rgb(226, 232, 240);
+        }
+
+
 
 .main-content {
     background-color: #e2e8f0;
