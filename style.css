@@ -5,7 +5,8 @@
     grid-template-areas: 
         "sidebar header"
         "sidebar main-content";
-        height: 100vh;
+    height: 100vh;
+    font-family: Roboto;
 }
 
 .sidebar {
@@ -13,7 +14,6 @@
     color: #ffffff;
     padding-right: 70px;
     padding-left: 25px;
-    font-family: Roboto;
     font-weight: 700;
 
     grid-area: sidebar;
@@ -70,13 +70,14 @@
     grid-template-rows: 1fr 2fr;
 }
 
-        .header > * {
+        /* .header > * {
             border: 2px black solid;
-        }
+        } */
 
         .search {
             display: flex;
-            padding: 0px 10px;
+            padding-left: 10px;
+            padding-right: 30px;
             gap: 5px;
         }
 
@@ -85,7 +86,25 @@
             margin: 20px 5px;
             border-radius: 10px;
             border: none;
-            background-color: rgb(226, 232, 240);
+            background-color: #e2e8f0;
+        }
+
+        .user-account {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            gap: 30px;
+            padding-right: 60px;
+        }
+
+        .avatar {
+            border-radius: 50%;
+            background-color: rgb(242, 194, 194);
+        }
+
+        .user-name {
+            font-weight: 600;
+            font-size: 1.1rem;
         }
 
 
