@@ -189,6 +189,10 @@
             justify-content: space-between;
         }
 
+        .card:hover {
+            background-color: rgb(244, 234, 216);
+        }
+
         .projects-container {
             grid-area: projects;
             display: grid;
@@ -226,14 +230,42 @@
             gap: 15px;
         }
 
-
-
-
         .announcements-container {
             grid-area: announcements;
             display: grid;
             grid-template-rows: 45px 1fr;
             gap: 10px;
+        }
+
+        .announcements-card {
+            padding: 20px 30px;
+            font-size: 0.8rem;
+            justify-content: space-around;
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        .announcement {
+            flex-grow: 1;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .announcement-title {
+            font-size: 0.95rem;
+        }
+
+        .announcement-content {
+            color: rgb(135, 132, 132);
+            padding-top: 5px;
+        }
+
+        .middle-announcement {
+            border-top: 1px #c4c1c1 solid;
+            border-bottom: 1px #c4c1c1 solid;
         }
 
 
