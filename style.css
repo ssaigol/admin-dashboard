@@ -240,6 +240,7 @@
             padding: 20px 0px;
             font-size: 0.8rem;
             justify-content: space-around;
+            margin-top: 15px;
 
             display: flex;
             flex-direction: column;
@@ -277,8 +278,44 @@
             grid-area: trending;
             display: grid;
             grid-template-rows: 45px 1fr;
-            gap: 10px;
+            gap: 25px;
+        }
+
+        #trending-card {
+            padding: 30px;
+            justify-content: space-around;
+        }
+
+        .trending-item {
+            display: flex;
+            gap: 20px;
+            font-size: 0.9rem;
+        }
+
+        .trending-text {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .trending-name {
+            color: #616060;
         }
 
 
+        #avatar1 {
+            background-color: rgb(135, 185, 135);
+        }
+
+        #avatar2 {
+            background-color: rgb(129, 158, 231);
+        }
+
+        #avatar3 {
+            background-color: rgb(185, 127, 239);
+        }
+
+        #avatar4 {
+            background-color: rgb(220, 234, 115);
+        }
 
