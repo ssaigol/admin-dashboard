@@ -256,7 +256,7 @@
         }
 
         .announcement:hover {
-            background-color: rgb(244, 234, 216);
+            background-color: #f4ead8;
         }
 
         .announcement-title {
@@ -290,6 +290,10 @@
             display: flex;
             gap: 20px;
             font-size: 0.9rem;
+        }
+
+        #trending-card:hover {
+            background-color: #f4ead8;
         }
 
         .trending-text {
