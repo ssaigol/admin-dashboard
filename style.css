@@ -185,11 +185,10 @@
 
             display: flex;
             flex-direction: column;
-            padding: 20px;
             justify-content: space-between;
         }
 
-        .card:hover {
+        .project-card:hover {
             background-color: rgb(244, 234, 216);
         }
 
@@ -238,7 +237,7 @@
         }
 
         .announcements-card {
-            padding: 20px 30px;
+            padding: 20px 0px;
             font-size: 0.8rem;
             justify-content: space-around;
 
@@ -252,6 +251,11 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
+            padding: 0px 40px;
+        }
+
+        .announcement:hover {
+            background-color: rgb(244, 234, 216);
         }
 
         .announcement-title {
