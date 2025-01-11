@@ -5,7 +5,7 @@
     grid-template-areas: 
         "sidebar header"
         "sidebar main-content";
-    height: 100vh;
+    height: 98vh;
     font-family: Roboto;
 }
 
@@ -18,7 +18,7 @@
 
     grid-area: sidebar;
     display: grid;
-    grid-template-rows: 150px 1fr 1fr;
+    grid-template-rows: 150px 1fr 1.5fr;
 }
 
         .sidebar-icon {
@@ -49,15 +49,6 @@
         .logo > p {
             font-size: 30px;
         }
-
-        .menu-nav {
-            display: grid;
-        }
-
-        .branding-nav {
-            margin-top: -150px;
-        }
-
 
 .header {
     background-color: white;
@@ -153,11 +144,80 @@
         }
 
 
-
 .main-content {
     background-color: #e2e8f0;
     z-index: 1;
 
     grid-area: main-content;
+    display: grid;
+    grid-template-columns: 3fr 1.1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "projects announcements"
+    "projects trending";
+    padding-bottom: 75px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
+
+        /* .projects-container, .announcements-container, .trending-container {
+            border: 1px black solid;
+        }
+
+        .projects-container > * {
+            border: 1px black solid;
+        }
+        .announcements-container > * {
+            border: 1px black solid;
+        }
+        .trending-container > * {
+            border: 1px black solid;
+        } */
+
+        .projects-header, .announcements-header, .trending-header {
+            display: flex;
+            align-items: end;
+            font-size: 1.2rem;
+        }
+
+        .card {
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        .projects-container {
+            grid-area: projects;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 50px repeat(3, 1fr);
+            gap: 25px;
+
+            padding-right: 25px;
+        }
+
+        .projects-header {
+            grid-column: span 2;
+        }
+
+        .project-card {
+            border-left: 8px solid #eeb33b;
+        }
+
+        .announcements-container {
+            grid-area: announcements;
+            display: grid;
+            grid-template-rows: 50px 1fr;
+            gap: 10px;
+        }
+
+
+        .trending-container {
+            grid-area: trending;
+            display: grid;
+            grid-template-rows: 50px 1fr;
+            gap: 10px;
+        }
+
+
 
